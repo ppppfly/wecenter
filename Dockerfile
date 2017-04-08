@@ -26,3 +26,4 @@ RUN chown -R www-data:www-data /var/www/html/system
 VOLUME  ["/app/uploads","/app/system_bak","/var/www/html/system/config"]
 RUN chown -R www-data:www-data /var/www/html/system/config
 COPY ./system/config/* /var/www/html/system/config/
+RUN chmod -R 0777 /var/www/html/uploads
