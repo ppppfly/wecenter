@@ -5,9 +5,9 @@ $config['prefix'] = 'aws_';
 $config['driver'] = 'PDO_MYSQL';
 $config['master'] = array (
   'charset' => 'utf8',
-  'host' => getenv('db_ip') ?: 'localhost',,
-  'username' => getenv('db_user') ?: 'root',
-  'password' => getenv('db_psw') ?: 'root',
-  'dbname' => getenv('dbname') ?: 'mbrs_wd',
+  'host' => getenv('DB_HOST') ?: 'localhost',,
+  'username' => getenv('DB_USER') ?: 'root',
+  'password' => getenv('DB_PWD') ?: 'root',
+  'dbname' => getenv('DB_NAME') ?: 'mbrs_wd',
 );
 $config['slave'] = false;
